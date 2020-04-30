@@ -1,0 +1,9 @@
+-- DROP TABLE IF EXISTS members;
+
+CREATE TABLE members (
+  email TEXT PRIMARY KEY,
+  username TEXT NOT NULL,
+  userpassword TEXT NOT NULL,
+  groupon INTEGER DEFAULT 1,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
